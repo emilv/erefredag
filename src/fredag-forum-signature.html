@@ -1,0 +1,119 @@
+<html lang="sv">
+	<head>
+		<title>Fredag i din forum-signatur? Gratis bild h&auml;r!</title>
+		<meta name="description" value="Forum-signatur som säger när det är fredag. Funkar till din hemsida också!">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="canonical" href="http://erefredag.se/fredag-forum-signature.html">
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript">
+
+			function calc() {
+				var url = 'http://erefredag.se/friday';
+				url += $(".pic:checked").val();
+				url += "-" + $(".other:checked").val();
+				url += ".png";
+				$(".theurl").text(url);
+			}
+
+			$(document).ready(function() {
+				$("input").bind("change", calc);
+				$("#submit").hide();
+			});
+		</script>
+	</head>
+	<body id="body2">
+		<h1>Erefredag.se i ditt forum eller p&aring; din hemsida!</h1>
+
+		<p class="breadcrumb">Du &auml;r h&auml;r: <a href="http://erefredag.se/">Ere fredag?</a> &raquo; <a href="meny-fredag.html">Fredags-kul</a> &raquo; <a href="/fredag-forum-signature.html">Forum-signatur</a></p>
+		<p>Alla gillar fredag. Nu kan du som m&aring;nga andra fira fredagar, med en bild p&aring; din blogg eller hemsida! Gl&ouml;m inte att l&auml;nka till <a href="http://erefredag.se/">Erefredag.se</a>!</p>
+		<p><small>Om du har förslag på fler motiv, eller är duktig på bildbehandling, är du välkommen att skicka dina egna bidrag till <nobr>rs<span></span>emil {på} gm<span></span>ail punkt com</nobr></small></p>
+
+		<img src="pic/fredag1.png" class="screenie" alt="">
+		<img src="pic/fredag2.png" class="screenie" alt="">
+
+		<hr>
+		<h2>1.</h2>
+		<p>V&auml;lj fredagsbild. Bilden syns bara p&aring; fredagar!</p>
+
+		<form method="get" action="#p3">
+			<p>
+							<div class="sigpick">
+				<input type="radio" class="pic" name="pic" id="pic2" value="2">
+				<label for="pic2">
+					<img src="img/friday2.png">
+				</label>
+				</div>
+							<div class="sigpick">
+				<input type="radio" class="pic" name="pic" id="pic6" value="6">
+				<label for="pic6">
+					<img src="img/friday6.png">
+				</label>
+				</div>
+							<div class="sigpick">
+				<input type="radio" class="pic" name="pic" id="pic3" value="3">
+				<label for="pic3">
+					<img src="img/friday3.png">
+				</label>
+				</div>
+							<div class="sigpick">
+				<input type="radio" class="pic" name="pic" id="pic4" value="4">
+				<label for="pic4">
+					<img src="img/friday4.png">
+				</label>
+				</div>
+							<div class="sigpick">
+				<input type="radio" class="pic" name="pic" id="pic5" value="5">
+				<label for="pic5">
+					<img src="img/friday5.png">
+				</label>
+				</div>
+						</p>
+
+			<hr>
+			<h2>2.</h2>
+			<p>V&auml;lj vad som visas n&auml;r det inte &auml;r fredag:</p>
+
+			<p>
+							<div class="sigpick">
+				<input type="radio" class="other" name="other" id="other1" value="1" checked="checked">
+				<label for="other1">
+					Visa inget				</label>
+				</div>
+							<div class="sigpick">
+				<input type="radio" class="other" name="other" id="other3" value="3">
+				<label for="other3">
+											<img src="img/c3.1.png">
+									</label>
+				</div>
+							<div class="sigpick">
+				<input type="radio" class="other" name="other" id="other5" value="5">
+				<label for="other5">
+											<img src="img/c5.1.png">
+									</label>
+				</div>
+						</p>
+
+			<p id="submit">
+				<input type="submit" value="Tryck här när du valt bilder!">
+			</p>
+		</form>
+
+		<hr>
+		<h2 id="p3">3.</h2>
+		<p>V&auml;lj hur du vill visa din fredagsbild och kopiera koden nedan. Bilden &auml;r dynamisk, s&aring; en bild visas p&aring; fredagar och en annan alla andra dagar.</p>
+
+		<p>Kod f&ouml;r <strong>forum</strong> och vissa sajter (BBcode):<br>
+			<pre class="code">[IMG]<span class="theurl">http://erefredag.se/friday1-1.png</span>[/IMG]</pre>
+		</p>
+		<p>Kod f&ouml;r <strong>hemsidor och bloggar</strong> (HTML):<br>
+			<pre class="code">&lt;a href="http://erefredag.se"&gt;&lt;img src="<span class="theurl">http://erefredag.se/friday1-1.png</span>" alt="&amp;Auml;r det fredag?" style="border:0"&gt;&lt;/a&gt;</pre>
+		</p>
+		<p>Adress direkt till bilden (URL):<br>
+			<pre class="theurl code">http://erefredag.se/friday1-1.png</pre>
+		</p>
+
+		<hr>
+		<h2>4.</h2>
+		<p>Tillbaka till <a href="http://erefredag.se/">startsidan</a></p>
+	</body>
+</html>

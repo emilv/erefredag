@@ -8,5 +8,6 @@ if [ $(date +%u) -eq 5 ]; then
     cp yes.html.gz index.html.gz
 else
     echo "Set Friday to nepp"
+    cp nepp.html index.html
     cp nepp.html.gz index.html.gz
 fi

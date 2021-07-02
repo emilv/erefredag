@@ -6,9 +6,10 @@ html {
 #body {
 	color: #fff;
 	background-color: #111;
-	display: table;
-	height: 100%;
-	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	margin: 0;
 	font-family: sans-serif;
 	z-index: 1;
@@ -25,8 +26,6 @@ html {
 
 #faq {
 	font-weight: bold;
-	display: table-cell;
-	vertical-align: middle;
 	text-align: center;
 	width: 100%;
 }
@@ -36,7 +35,7 @@ html {
 	padding: 0;
 	padding-top: 1%;
 	text-align: center;
-	font-size: 7.7vw;
+	font-size: 8.9vw;
 	width: 100%;
 }
 
@@ -44,7 +43,7 @@ html {
 	padding: 0;
 	margin: 0;
 	padding-top: 1%;
-	font-size: 27vw;
+	font-size: 29vw;
 }
 
 #menu, #menu ul {

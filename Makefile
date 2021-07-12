@@ -18,7 +18,8 @@ dist:
 	mkdir -p $@
 
 dist/yes.html: src/index.html dist
-	sed 's/ANSWER/Yes\!/' src/index.html > $@
+	cat src/index.html | sed 's/SMOL_ANSWER/yes/' | sed 's/BOOL_ANSWER/true/' | sed 's/ANSWER/Yes\!/' > $@
 
 dist/nepp.html: src/index.html dist
-	sed 's/ANSWER/Nepp/' src/index.html > $@
+	cat src/index.html | sed 's/SMOL_ANSWER/no/' | sed 's/BOOL_ANSWER/false/' | sed 's/ANSWER/Nepp/' > $@
+

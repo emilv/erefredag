@@ -79,7 +79,7 @@ html {
 	display: none;
 }*/
 .news {
-	background-image: url("/web/20180901071137im_/http://erefredag.se/pic/news.png");
+	background-image: url("/pic/news.png");
 	background-position: right top;
 	background-repeat: no-repeat;
 }

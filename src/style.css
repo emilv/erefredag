@@ -46,6 +46,15 @@ html {
 	font-size: 29vw;
 }
 
+@media (min-aspect-ratio: 2/1) {
+    .question {
+	font-size: 17.8vh;
+    }
+    .answer {
+	font-size: 58vh;
+    }
+}
+
 #menu, #menu ul {
 	font-size: 10pt;
 	position: absolute;

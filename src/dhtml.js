@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let simple = true
 let simple_interval = null
-let simple_counter = 6;
+let simple_counter = 16
 function simplicity() {
-    simple_counter = 6
+    simple_counter = 16
     if (!simple) {
-        return;
+        return
     }
 
     document.querySelectorAll(".sec:not(.active)").forEach(elem => {
@@ -22,13 +22,13 @@ function simplicity() {
 
     simple_interval = setInterval(() => {
         if (simple_counter > 0) {
-            simple_counter--;
+            simple_counter--
         } else {
-            clearInterval(simple_interval);
+            clearInterval(simple_interval)
             document.querySelectorAll(".sec.active").forEach(elem => {
                 elem.classList.remove("active")
             })
-            simple = true;
+            simple = true
         }
-    }, 1000);
+    }, 1000)
 }
